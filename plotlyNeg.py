@@ -23,13 +23,13 @@ for line in file:
     neg.append(line[3])
     change.append(line[7])
 
-trace = go.Scatter(
-    x=neu,
+trace1 = go.Scatter(
+    x=neg,
     y=change,
     mode='markers',
-    text=coins
+    name="neg"
 )
 
-data = [trace]
+data2 = [trace1]
 
-py.plot(data, filename='basic-scatter')
+py.plot(data2, filename='basic-scatter')
